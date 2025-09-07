@@ -68,3 +68,24 @@ Your terminal should now show a confirmation message, such as Server listening o
 Database Note
 This prototype uses a file-based SQLite database (db.sqlite). All data for colleges, students, events, and registrations is contained within this single file. The db.js file manages the connection logic, and the server (via routes.js) performs all necessary queries against this file.
 
+#OUTPUT:
+1.Event Registration Report
+
+This API endpoint (/api/reports/events) shows the total registrations for each event. For example, the AI Workshop has 3 registrations, while the Tech Fest has 1.
+
+<img width="1920" height="1080" alt="report event" src="https://github.com/user-attachments/assets/bd44e036-2c42-4873-a4a5-a1332d96af8f" />
+
+2. Student Participation Report
+
+This API endpoint (/api/reports/students) lists students and the number of events they have attended. For instance, Alice Johnson attended 2 events, while Bob Smith attended 1.
+
+<img width="1920" height="1080" alt="report student" src="https://github.com/user-attachments/assets/156aa692-53b8-4ff3-b821-2b6d174fd532" />
+
+3. Top 3 Students by Attendance
+
+This API endpoint (/api/reports/top3) returns the top 3 students based on event participation. Alice Johnson is the most active, followed by Charlie Brown and Bob Smith.
+
+
+<img width="1920" height="1080" alt="report_top3" src="https://github.com/user-attachments/assets/47a9d426-7a6a-432f-bb75-06a1c879fcdb" />
+
+
