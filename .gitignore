@@ -1,0 +1,11 @@
+# Node modules in any directory
+**/node_modules/
+
+# SQLite database
+prototype/db.sqlite
+
+# Logs
+*.log
+
+# Environment variables
+.env
